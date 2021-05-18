@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1 Задание №1.
+        var x = 2;
+
+        function prime(num) {
+            var i = 2;
+            while (i <= num / 2) {
+                if (num % 1 == 0) {
+                    return false;
+                }
+                i++;
+            }
+            return true
+        }
+        while (x <= 100) {
+            if (prime(x) == true) {
+                console.log(x)
+            }
+            x++;
+        }
+
+
+        //2 Задание #2.
+        var basket = [
+            {
+                title: "Товар 1",
+                price: 100,
+                quantity: 1
+            },
+            {
+                title: "Товар 2",
+                price: 200,
+                quantity: 2
+            },
+            {
+                title: "Товар 3",
+                price: 300,
+                quantity: 3
+            }
+        ]
+
+        function countBasketPrice(mas) {
+            var sumBasket = 0;
+            for (var item of mas) {
+                sumBasket = sumBasket + (item.price * item.quantity)
+            }
+            return sumBasket
+        }
+        console.log(countBasketPrice(basket))
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
