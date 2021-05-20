@@ -8,10 +8,12 @@
     <title>Document</title>
     <script>
         //1 Задание №1.
-        var x = 2;
+        var x = 2
 
         function prime(num) {
-            var i = 2;
+            var min = 0;
+            var max = 100;
+            var i = Math.round(Math.random() * (max - min) + min);
             while (i <= num / 2) {
                 if (num % 1 == 0) {
                     return false;
