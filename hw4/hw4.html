@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+         #1
+        var num1 = prompt("Введите число от 0 до 999");
+        numLength = num1.length;
+        objct = {};
+        funct(num1);
+
+        function funct(num) {
+            if(num < 0 || num > 999) {
+                console.log("Ваше число " + num + " находится вне предела от 0 до 999")
+            } else {
+                switch(numLength){
+                    case 3:
+                        objct.units = num[2];
+                        objct.tens = num[1];
+                        objct.hundreds = num[0];
+                    case 2:
+                    objct.units = num[1];
+                    objct.tens = num[0];
+                    default: 
+                    objct.units = num[0];
+                }
+                console.log(objct);
+            }
+            return objct;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
